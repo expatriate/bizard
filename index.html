@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bizard</title>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/viewportChecker.min.js"></script>
+        
+        <script type="text/javascript" src="js/common.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="block block__blue block__mid block__high" id="start">
+                <div class="block__inner top-bg-1">
+                    <div class="top-menu anim-bot-invis-0">
+                        <div class="top-menu__logo">
+                            <a href="/">
+                                BIZARD SYSTEM
+                            </a>
+                        </div>
+                        <nav class="top-menu__navigation" id="navigation">
+                            <a href="#start" class="active">Главная</a>
+                            <a href="#managment" >Менеджмент</a>
+                            <a href="#capabilities">Возможности</a>
+                            <a href="#how-it-works">Как это работает</a>
+                            <a href="#buy">Купить</a>
+                            <a href="#contacts">Контакты</a>
+                        </nav>
+                        <div class="top-menu__social">
+                            <a class="top-menu__social__item" href="#" title="Twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="16px" height="16px">
+                                    <g>
+                                        <g>
+                                            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z" fill="#FFFFFF"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                            <a class="top-menu__social__item" href="#" title="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_2" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 430.113 430.114" style="enable-background:new 0 0 430.113 430.114;" xml:space="preserve">
+                                <g>
+                                    <path id="Facebook" d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805   c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354   c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z" fill="#FFFFFF"/>
+                                </g>
+                                </svg>
+                            </a>
+                            <a class="top-menu__social__item" href="#" title="Youtube">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_3" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 96.875 96.875" style="enable-background:new 0 0 96.875 96.875;" xml:space="preserve">
+                                <g>
+                                    <path d="M95.201,25.538c-1.186-5.152-5.4-8.953-10.473-9.52c-12.013-1.341-24.172-1.348-36.275-1.341   c-12.105-0.007-24.266,0-36.279,1.341c-5.07,0.567-9.281,4.368-10.467,9.52C0.019,32.875,0,40.884,0,48.438   C0,55.992,0,64,1.688,71.336c1.184,5.151,5.396,8.952,10.469,9.52c12.012,1.342,24.172,1.349,36.277,1.342   c12.107,0.007,24.264,0,36.275-1.342c5.07-0.567,9.285-4.368,10.471-9.52c1.689-7.337,1.695-15.345,1.695-22.898   C96.875,40.884,96.889,32.875,95.201,25.538z M35.936,63.474c0-10.716,0-21.32,0-32.037c10.267,5.357,20.466,10.678,30.798,16.068   C56.434,52.847,46.23,58.136,35.936,63.474z" fill="#FFFFFF"/>
+                                </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="top-menu__lang">
+                            <a aria-role="button" title="Русский язык" class="active" href="/">Рус</a>/<a aria-role="button" title="English language" href="/en">En</a>
+                        </div>
+                    </div>
+                    <div class="top-banner">
+                        <div class="top-banner__header js-animate-from-bot">
+                            Bizard tunnel — 
+                        </div>
+                        <h1 class="top-banner__text js-animate-from-bot-slow">
+                            Централизованная система управления майнинг мощностями на высоком уровне 
+                        </h1>
+                        <div class="js-animate-from-top-slow">
+                            <button class="button button__blue top-banner__button">
+                                Хочу попробовать
+                            </button>
+                        </div>
+                        <div class="js-animate-from-top">
+                            <div class="top-banner__video-text">
+                                Посмотрите видео
+                                <a href="#" class="video-pdf" title="Презентация системы версия PDF">
+                                    <div class="video-pdf__text">
+                                        Презентация системы версия PDF
+                                    </div>
+                                    <div class="video-pdf__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0px" y="0px" viewBox="0 0 299.998 299.998" style="enable-background:new 0 0 299.998 299.998;" xml:space="preserve" width="60px" height="60px">
+                                            <g>
+                                                <g>
+                                                    <path d="M149.995,0C67.156,0,0,67.159,0,149.997c0,82.837,67.156,150,149.995,150s150.003-67.163,150.003-150    C299.997,67.159,232.834,0,149.995,0z M110.967,105.357c2.075-2.075,4.793-3.112,7.511-3.112c2.718,0,5.434,1.037,7.508,3.112    l13.297,13.295v-3.911V62.477c0-5.867,4.754-10.621,10.621-10.621s10.621,4.754,10.621,10.621v52.263v4.63l4.63-4.63l9.386-9.384    c2.075-2.075,4.79-3.112,7.508-3.112s5.436,1.037,7.511,3.112c2.552,2.549,3.522,6.079,2.933,9.384    c0,0.003-0.003,0.005-0.003,0.008c-0.044,0.239-0.119,0.469-0.179,0.703c-0.091,0.366-0.189,0.729-0.322,1.084    c-0.088,0.239-0.189,0.472-0.296,0.705c-0.166,0.371-0.358,0.726-0.568,1.079c-0.112,0.187-0.215,0.373-0.34,0.552    c-0.363,0.524-0.76,1.032-1.227,1.499l-15.115,15.115l-16.591,16.591c-2.077,2.075-4.793,3.105-7.508,3.105    c-0.026,0-0.052,0-0.078,0s-0.054,0-0.078,0c-2.715,0-5.431-1.03-7.508-3.105l-16.591-16.591l-15.115-15.115    c-0.467-0.467-0.864-0.973-1.222-1.496c-0.127-0.184-0.231-0.373-0.345-0.56c-0.207-0.35-0.397-0.703-0.563-1.069    c-0.109-0.239-0.213-0.475-0.301-0.718c-0.127-0.348-0.223-0.7-0.314-1.056c-0.062-0.246-0.143-0.485-0.187-0.734    C107.444,111.436,108.412,107.906,110.967,105.357z M231.574,209.315h-0.003c0,14.337-14.057,25.568-32.005,25.568h-99.132    c-17.945,0-32.005-11.23-32.005-25.568V140.31c0-12.117,10.058-21.988,24.004-24.761c0.604,5.981,3.224,11.526,7.534,15.834    l4.108,4.108h-3.641c-7.265,0-11.256,3.621-11.256,4.819v69.005c0,1.201,3.992,4.819,11.256,4.819h99.135    c7.265,0,11.256-3.621,11.256-4.819V140.31c0-1.198-3.992-4.819-11.256-4.819h-3.12l4.111-4.111    c4.282-4.279,6.894-9.786,7.516-15.727c13.681,2.913,23.498,12.69,23.498,24.66V209.315z" fill="#FFFFFF"/>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="top-banner__video">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="block  block__withoutmargin">
+            <div class="block__inner">
+                <h2 class="block__title block__title-tp js-animate-from-top-slow" id="managment">
+                    Эффективный менеджмент хэшрейта через удобный интерфейс
+                </h2>
+                <div class="block__content">
+                    <div class="block__text block__text--with-pad js-animate-from-top-slow">
+                        Бизард осуществляет онлайн мониторинг каждой машины в режиме реального времени
+                    </div>
+                    <ul class="content-list">
+                        <li class="js-animate-from-top-slow">
+                            — Статистика по всем пулам на одном графике
+                        </li>
+                        <li class="js-animate-from-top-slow">
+                            — Сведения по каждой отдельной машине
+                        </li>
+                        <li class="js-animate-from-top-slow">
+                            — Оповещение об ошибках, мобильное приложение
+                        </li>
+                        <li class="js-animate-from-top-slow">
+                            — Переключение между пулами и монетами без потери хэшрейта
+                        </li>
+                        <li class="js-animate-from-top-slow">
+                            — Устойчивость к блокировкам, благодаря архитектуре передачи данных
+                        </li>
+                    </ul>
+                    <div class="image image__pull-right">
+                        <img src="img/png/block-2.png" alt="">
+                    </div>
+                    <div class="js-animate-from-top-slow">
+                        <button class="button button__blue ">
+                            Хочу попробовать
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__inner">
+                <h2 class="block__title block__title-centered js-animate-from-top-slow" id="capabilities">
+                    Что даёт вам Bizard tunnel
+                </h2>
+                <div class="block__content">
+                    <div class="grid">
+                        <div class="grid__row">
+                            <div class="grid-card js-animate-from-top-slow">
+                                <div class="grid-card__image">
+                                    <img src="img/png/capabilities-1.png" alt="">
+                                </div>
+                                <div class="grid-card__text">
+                                    <span>Экономия времени — </span>переключение между пулами происходит без перезапуска
+                                </div>
+                            </div>
+                            <div class="grid-card js-animate-from-top-slow">
+                                <div class="grid-card__image">
+                                    <img src="img/png/capabilities-2.png" alt="">
+                                </div>
+                                <div class="grid-card__text">
+                                    <span>Прозрачность — </span>видна эффективность каждой отдельной машины
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__row">
+                            <div class="grid-card js-animate-from-top-slow">
+                                <div class="grid-card__image">
+                                    <img src="img/png/capabilities-3.png" alt="">
+                                </div>
+                                <div class="grid-card__text">
+                                    <span>Интеграция — </span>вы заводите все машины в систему и управляете мощностями через ее интерфейс
+                                </div>
+                            </div>
+                            <div class="grid-card js-animate-from-top-slow">
+                                <div class="grid-card__info">
+                                    Бизард порекомендует монету, даже если ее конфигурация не задана 
+                                </div>
+                                <div class="grid-card__image">
+                                    <img src="img/png/capabilities-4.png" alt="">
+                                </div>
+                                <div class="grid-card__text">
+                                    <span>Прибыль — </span>система подсказывает более выгодную монету
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__row">
+                            <div class="grid-card js-animate-from-top-slow">
+                                <div class="grid-card__image">
+                                    <img src="img/png/capabilities-5.png" alt="">
+                                </div>
+                                <div class="grid-card__text">
+                                    <span>Вы всегда в курсе — </span>все оповещения сразу приходят на мобильный телефон
+                                </div>
+                            </div>
+                            <div class="grid-card js-animate-from-top-slow">
+                                <div class="grid-card__image">
+                                    <img src="img/png/capabilities-6.png" alt="">
+                                </div>
+                                <div class="grid-card__text">
+                                    <span>Автоматизация — </span>функция автоматического переключения между монетами, вся история сохраняется в личном кабинете
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image__pull-left capabilities__image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__inner">
+                <img class="how-it-works-bg-1" src="img/png/how-it-works-bg-1.png" alt="">
+                <h2 class="block__title js-animate-from-top-slow" id="how-it-works">
+                    Как это работает?
+                </h2>
+                <div class="block__content block__content__pull-left">
+                    <div class="block__subtitle js-animate-from-top-slow">
+                        <div class="block__subtitle__image">
+                            <img src="img/png/how-it-works-1.png" alt="">
+                        </div>
+                        Быстрое решение
+                    </div>
+                    <div class="content-list js-animate-from-top">
+                       На ваш мобильный приходит оповещение о проблеме. Вы кликаете на сообщение и попадаете в соответсвующий раздел Bizard Tunnel, там вы видите причину. <br> Вы устраняете проблему без потери времени.
+                    </div>
+                </div>
+                <div class="image image__float-right image__tm" id="parallax-left-block">
+                    <img id="browser1-parallax" src="img/png/browser1.png" class="image__shadow" alt="">
+                    <img id="phone1-parallax" src="img/png/phone1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__inner">
+                <img class="how-it-works-bg-2" src="img/png/how-it-works-bg-2.png" alt="">
+                <div class="block__content block__content__pull-right">
+                    <div class="block__subtitle js-animate-from-top-slow">
+                        <div class="block__subtitle__image">
+                            <img src="img/png/how-it-works-2.png" alt="">
+                        </div>
+                        Статистика
+                    </div>
+                    <div class="content-list js-animate-from-top">
+                       Вам нужна статистика по всем пулам - вы выводите общий график для всех пулов и смотрите данные на одном экране, больше не нужно собирать информацию по каждому пулу отдельно - кликая на определенную точку на графике, вы можете смотреть статистику за конкретный день и по конкретной машине 
+                    </div>
+                </div>
+                <div class="image image__float-left">
+                    <img id="browser2" class="js-animate-right image__shadow" src="img/png/browser2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__inner">
+                <div class="block__content block__content__pull-left">
+                    <div class="block__subtitle js-animate-from-top-slow">
+                        <div class="block__subtitle__image">
+                            <img src="img/png/how-it-works-3.png" alt="">
+                        </div>
+                        Прозрачность
+                    </div>
+                    <div class="content-list js-animate-from-top">
+                       Вы хотите знать какая машина или пул имеют наибольшую эффективность в вашем дата-центре - в Bizard Tunnel выводится статистика по каждой машине -вы можете справедливо распределять вознаграждение между майнерами 
+                    </div>
+                </div>
+                <div class="image image__float-right image__top-pos">
+                    <img id="browser2" class="js-animate-left image__shadow" src="img/png/browser2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__inner block__inner-centered">
+                <div class="js-animate-from-top-slow">
+                    <button class="button button__blue">
+                        Хочу попробовать
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="left-center-grad block__rotated">
+                <div class="block__inner">
+                    <img class="dashboard-bg" src="img/png/dashboard-bg.png">
+                </div>
+            </div>
+            <div class="block__inner">
+                <h2 class="block__title block__title-centered block__title-white" id="capabilities">
+                    Dashboard
+                </h2>
+                <div class="block__content triple-card">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
+            </div>
+        </div>
+        <div class="block block__withmargin">
+            <div class="block__inner">
+                <h2 class="block__title js-animate-from-top-slow" id="managment">
+                    Майнинг пулы
+                </h2>
+                <div class="block__content">
+                    <div class="content-list__round">
+                        <div class="block__content block__content__pull-left ">
+                            <div class="round__item js-animate-from-top-slow">
+                                <div class="round__number">
+                                    1
+                                </div>
+                                <div class="round__text">
+                                   Смотрите общую статистику по всем пулам на одном интерактивном графике
+                               </div>
+                            </div>
+                            <div class="round__item js-animate-from-top-slow">
+                                <div class="round__number">
+                                    2
+                                </div>
+                                <div class="round__text">
+                                   Задайте системе алгоритм для автоматического перенаправления вас на определенные пулы 
+                               </div>
+                            </div>
+                            <div class="round__item js-animate-from-top-slow">
+                                <div class="round__number">
+                                    3
+                                </div>
+                                <div class="round__text">
+                                   Получайте уведомления об оптимальных пулах
+                               </div>
+                            </div>
+                        </div>
+                        <div class="image image__pull-right">
+                            <img src="img/png/mining-pool-bg.png" class="mining-pool-bg" alt="">
+                            <img id="mining-pools" src="img/png/mining-pool.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__inner block__inner-centered">
+                <div class="js-animate-from-top-slow">
+                    <button class="button button__blue">
+                        Хочу попробовать
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="block block__300 block__high">
+            <div class="block__inner">
+                <h2 class="block__title block__title-centered block__title-sp js-animate-from-top" id="capabilities">
+                    Посмотри все возможности системы
+                </h2>
+                <div class="block__text block__text-centered js-animate-from-top-slow">
+                    Всего 7 минут, чтобы получить ПРОФИТ
+                </div>
+                <div class="bottom-banner__video js-animate-from-top">
+                </div>
+            </div>
+        </div>
+        <div class="block block__blue block__withoutmargin">
+            <div class="use-it-now-bg">
+            </div>
+            <div class="block__inner">
+                <h2 class="block__title block__title-tp-2 block__title-centered mid-size js-animate-from-top" id="use-it-now">
+                    Начни пользоваться сервисом прямо сейчас
+                </h2>
+                <div class="block__text block__text-centered middle white js-animate-from-top-slow">
+                    ХОЧЕШЬ ПОПРОБОВАТЬ БЕСПЛАТНО?
+                </div>
+                <div class="form-send js-animate-from-top">
+                    <input type="text" name="Name" autocomplete="name" placeholder="Ваше имя">
+                    <input type="email" name="Email" autocomplete="email" placeholder="Ваш e-mail">
+                    <button class="button button__blue button__mid">Получить инструкции</button>
+                </div>
+                <div class="block__text block__text-centered small white mid-size pb-64 js-animate-from-top-slow">
+                    Оставляя свои контактные данные в этой форме, вы даете свое согласие на обработку персональных данных
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__inner">
+                <h2 class="block__title block__title-centered js-animate-from-top" id="capabilities">
+                    Как это выглядит
+                </h2>
+                <div class="block__content block__content__pull-left">
+                    <div class="round__item round__item-arrow js-animate-from-top-slow">
+                        <div class="round__arrow">
+                        </div>
+                        <div class="round__text">
+                           Переключение между пулами без потери хэшрейта 
+                       </div>
+                    </div>
+                    <div class="round__item round__item-arrow js-animate-from-top-slow">
+                        <div class="round__arrow">
+                        </div>
+                        <div class="round__text">
+                           Удаленный контроль процессов
+                       </div>
+                    </div>
+                    <div class="round__item round__item-arrow js-animate-from-top-slow">
+                        <div class="round__arrow">
+                        </div>
+                        <div class="round__text">
+                           Моментальное оповещение о неполадках и новых возможностях
+                       </div>
+                    </div>
+                </div>
+                <div class="image image__float-right js-animate-from-left-slow">
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block__inner">
+                <h2 class="block__title block__title-centered mid-size js-animate-from-top" id="buy">
+                    Честное обслуживание каждой машины
+                </h2>
+                <div class="block__content triple-card__simple">
+                    <div class="card-simple js-animate-from-top-slow">
+                        <div class="card-simple__time">
+                            1 месяц
+                        </div>
+                        <div class="card-simple__price">
+                            3$
+                        </div>
+                        <div class="card-simple__details">
+                            <div class="card-simple__line">
+                                Все автоматически
+                            </div>
+                            <div class="card-simple__line">
+                                Мониторинг
+                            </div>
+                            <div class="card-simple__line">
+                                Удаленное управление
+                            </div>
+                            <div class="card-simple__line">
+                                Техническая поддержка
+                            </div>
+                        </div>
+                        <button class="button button__blue">
+                            Подключиться
+                        </button>
+                    </div>
+                    <div class="card-simple js-animate-from-top-slow card-simple__blue">
+                        <div class="card-simple__action">
+                            ВЫГОДНО!
+                        </div>
+                        <div class="card-simple__time">
+                            6 месяцев
+                        </div>
+                        <div class="card-simple__price">
+                            16,8$
+                        </div>
+                        <div class="card-simple__details">
+                            <div class="card-simple__line">
+                                Все автоматически
+                            </div>
+                            <div class="card-simple__line">
+                                Мониторинг
+                            </div>
+                            <div class="card-simple__line">
+                                Удаленное управление
+                            </div>
+                            <div class="card-simple__line">
+                                Техническая поддержка
+                            </div>
+                        </div>
+                        <button class="button button__white">
+                            Подключиться
+                        </button>
+                    </div>
+                    <div class="card-simple js-animate-from-top-slow">
+                        <div class="card-simple__time">
+                            12 месяцев
+                        </div>
+                        <div class="card-simple__price">
+                            24$
+                        </div>
+                        <div class="card-simple__details">
+                            <div class="card-simple__line">
+                                Все автоматически
+                            </div>
+                            <div class="card-simple__line">
+                                Мониторинг
+                            </div>
+                            <div class="card-simple__line">
+                                Удаленное управление
+                            </div>
+                            <div class="card-simple__line">
+                                Техническая поддержка
+                            </div>
+                        </div>
+                        <button class="button button__blue">
+                            Подключиться
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block block__grey">
+            <div class="contacts-bg">
+            </div>
+            <div class="block__inner">
+                <img src="img/png/contacts-1.png" class="contacts-preview" alt="">
+                <h2 class="block__title block__title-centered block__title-white js-animate-from-top" id="contacts">
+                    ПРОТЕСТИРУЙ ВЕСЬ ФУНКЦИОНАЛ СЕРВИСА БЕСПЛАТНО
+                </h2>
+                <div class="block__text block__text-centered middle white js-animate-from-top-slow">
+                    Оставь заявку и получи 7-дневный бесплатный период
+                </div>
+                <div class="form-send js-animate-from-top">
+                    <input type="text" name="Name" autocomplete="name" placeholder="Ваше имя">
+                    <input type="email" name="Email" autocomplete="email" placeholder="Ваш e-mail">
+                    <button class="button button__blue button__mid">Получить инструкции</button>
+                </div>
+                <div class="block__text block__text-centered small white mid-size pb-64 js-animate-from-top-slow">
+                    Оставляя свои контактные данные в этой форме, вы даете свое согласие на обработку персональных данных
+                </div>
+                <div class="bottom-social">
+                    <button class="button button__blue button__mid js-animate-from-top-slow">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" width="50px" height="50px">
+                            <g id="XMLID_496_">
+                                <path id="XMLID_497_" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412   c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22   c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207   c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146   c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z" fill="#FFFFFF"/>
+                            </g>
+                        </svg>
+                        чат-поддержка
+                    </button>
+                    <button class="button button__white button__mid js-animate-from-top-slow">
+                        <svg version="1.1" id="Capa_9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 49 49" style="enable-background:new 0 0 49 49;" xml:space="preserve" width="50px" height="50px">
+                        <g>
+                            <g>
+                                <path d="M39.256,6.5H9.744C4.371,6.5,0,10.885,0,16.274v16.451c0,5.39,4.371,9.774,9.744,9.774h29.512
+                                    c5.373,0,9.744-4.385,9.744-9.774V16.274C49,10.885,44.629,6.5,39.256,6.5z M47,32.726c0,4.287-3.474,7.774-7.744,7.774H9.744
+                                    C5.474,40.5,2,37.012,2,32.726V16.274C2,11.988,5.474,8.5,9.744,8.5h29.512c4.27,0,7.744,3.488,7.744,7.774V32.726z"/>
+                                <path d="M33.36,24.138l-13.855-8.115c-0.308-0.18-0.691-0.183-1.002-0.005S18,16.527,18,16.886v16.229
+                                    c0,0.358,0.192,0.69,0.502,0.868c0.154,0.088,0.326,0.132,0.498,0.132c0.175,0,0.349-0.046,0.505-0.137l13.855-8.113
+                                    c0.306-0.179,0.495-0.508,0.495-0.863S33.667,24.317,33.36,24.138z M20,31.37V18.63l10.876,6.371L20,31.37z"/>
+                            </g>
+                        </g>
+                        </svg>
+                        youtube
+                    </button>
+                </div>
+                <div class="image image__pull-right image__pull-bottom">
+                </div>
+                <div class="copyright">
+                    © Copyright 2018<br>
+                    <a href="/" title="privacy">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
