@@ -112,8 +112,8 @@ $(document).ready(function() {
     * SUBMIT FORM
     */
     $(document).on('click', '.js-button-send', function(e) {
-        var name = $(e.target).parent().find('input[name="Name]').val();
-        var email = $(e.target).parent().find('input[name="Email]').val();
+        var name = $(e.target).parent().find('input[name="Name"]').val();
+        var email = $(e.target).parent().find('input[name="Email"]').val();
 
         if (name.length && email.length) {
             $.ajax({
