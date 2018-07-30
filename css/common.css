@@ -475,10 +475,13 @@ html, body {
     display: flex;
     flex-grow: 1;
 }
+.top-menu__social__mobile {
+    display: none;
+}
 .top-menu__social__item {
     margin: 2px;
 }
-.top-menu__lang {
+.top-menu__lang , .top-menu__lang__mobile{
     flex-grow: 1;
     display: flex;
     font-family: 'SFU';
@@ -486,11 +489,14 @@ html, body {
     font-size: 14px;
     color: #ffffff;
 }
-.top-menu__lang a {
+.top-menu__lang__mobile {
+    display: none;
+}
+.top-menu__lang a , .top-menu__lang__mobile a{
     text-decoration: none;
     color: #ffffff;
 }
-.top-menu__lang a.active {
+.top-menu__lang a.active, .top-menu__lang__mobile a.active {
     color: #ffcd39;
 }
 
@@ -1082,6 +1088,13 @@ html, body {
     outline: none;
 }
 
+.top-menu__mobile-navigation {
+    display: none;
+}
+
+.slicknav_menu {
+    display: none;
+}
 
 /*
 * Mobile
@@ -1204,8 +1217,20 @@ html, body {
         width: auto;
     }
     .block__subtitle {
-        font-size: 30px;
+        font-size: 22px;
     }
+    .block__subtitle__image {
+        width: 50px;
+        height: 50px;
+    }
+    .block__subtitle__image img{
+        width: 50px;
+        height: 50px;
+    }
+    .block__rotated {
+            width: 180%;
+    }
+
     .how-it-work .how-it-works-bg-1, .how-it-work .image__float-right, .how-it-work .image__float-left {
         display: none;
     }
@@ -1284,6 +1309,10 @@ html, body {
         margin: 10px;
         width: auto;
     }
+    .card-simple:first-child, .card-simple:last-child, .card-simple {
+        height: auto;
+        margin-bottom: 20px;
+    }
     .bottom-social {
         flex-direction: column;
     }
@@ -1293,7 +1322,18 @@ html, body {
     }
     .copyright {
         padding-top: 10px;
-        padding-bottom: 325px;
+        padding-bottom: 200px;
+        font-size: 16px;
+    }
+    .contacts-preview {
+        height: 12%;
+    }
+    .contacts-bg {
+        background-position: center bottom;
+    }
+    .bottom-social .button {
+        padding: 10px;
+        height: 50px;
     }
 
     .popup__header {
@@ -1301,6 +1341,53 @@ html, body {
     }
     .popup__content {
         padding: 0px;
+    }
+    .top-menu__navigation {
+        display: none;
+    }
+    /*.top-menu__mobile-navigation {
+        display: block;
+    }*/
+    .slicknav_menu {
+        display: block;
+    }
+    .slicknav_nav {
+        font-family: 'SFU';
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .slicknav_nav li {
+        padding: 5px 0px;
+    }
+    .top-menu {
+        padding: 30px 30px 54px 30px;
+    }
+    .top-menu__social {
+        display: none;
+    }
+    .top-menu__social__mobile {
+        display: block;
+        text-align: center;
+        padding: 30px;
+    }
+    .top-menu__social__mobile a {
+        outline: none;
+        text-decoration: none;
+    }
+    .top-menu__social__mobile a:nth-child(2), .top-menu__social__mobile a:last-child{
+        margin-left: 20px;
+    }
+    .top-menu__logo a {
+        font-size: 3.8em;
+    }
+    .top-menu__lang {
+        display: none;
+    }
+    .top-menu__lang__mobile {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom:20px;
     }
 }
 

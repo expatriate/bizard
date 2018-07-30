@@ -76,6 +76,13 @@ $(document).ready(function() {
         fixedContentPos: false
     });
 
+    $('#navigation-mobile').slicknav({
+        label: '',
+        duration: 1000,
+        //easingOpen: "ease", //available with jQuery UI
+        //prependTo:'#demo2'
+    });
+
     $(document).on('click', '.modal', function(e) {
         if (!$(e.target).hasClass('js-video')) {
             $.magnificPopup.open({
