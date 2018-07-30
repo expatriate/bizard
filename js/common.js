@@ -106,6 +106,24 @@ $(document).ready(function() {
     $(document).on('mouseout', '.card', function(e) {
         $(e.target).removeClass('card-high');
     });
+
+
+    /*
+    * SUBMIT FORM
+    */
+    $(document).on('click', '.js-button-send', function(e) {
+        var name = $(e.target).parent().find('input[name="Name]').val();
+        var email = $(e.target).parent().find('input[name="Email]').val();
+
+        if (name.length && email.length) {
+            $.ajax({
+                method: 'POST',
+                url: 'some_url',
+                data: { name: name, email: email }
+            }).done(function(msg) {
+            });
+        }
+    });
 });
 
 function onLoad() {

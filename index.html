@@ -399,7 +399,7 @@
                 <div class="form-send js-animate-from-top">
                     <input type="text" name="Name" autocomplete="name" placeholder="Ваше имя">
                     <input type="email" name="Email" autocomplete="email" placeholder="Ваш e-mail">
-                    <button class="button button__blue button__mid">Получить инструкции</button>
+                    <button class="button button__blue button__mid js-button-send">Получить инструкции</button>
                 </div>
                 <div class="block__text block__text-centered small white mid-size pb-64 js-animate-from-top-slow">
                     Оставляя свои контактные данные в этой форме, вы даете свое согласие на обработку персональных данных
@@ -531,7 +531,9 @@
             <div class="contacts-bg">
             </div>
             <div class="block__inner">
-                <img src="img/png/contacts-1.png" class="contacts-preview" alt="">
+                <a href="#" class="youtube-link" title="youtube">
+                    <img src="img/png/contacts-1.png" class="contacts-preview" alt="">
+                </a>
                 <h2 class="block__title block__title-centered block__title-white js-animate-from-top" id="contacts">
                     ПРОТЕСТИРУЙ ВЕСЬ ФУНКЦИОНАЛ СЕРВИСА БЕСПЛАТНО
                 </h2>
@@ -541,7 +543,7 @@
                 <div class="form-send js-animate-from-top">
                     <input type="text" name="Name" autocomplete="name" placeholder="Ваше имя">
                     <input type="email" name="Email" autocomplete="email" placeholder="Ваш e-mail">
-                    <button class="button button__blue button__mid">Получить инструкции</button>
+                    <button class="button button__blue button__mid js-button-send">Получить инструкции</button>
                 </div>
                 <div class="block__text block__text-centered small white mid-size pb-64 js-animate-from-top-slow">
                     Оставляя свои контактные данные в этой форме, вы даете свое согласие на обработку персональных данных
@@ -580,8 +582,18 @@
                 </div>
             </div>
         </div>
-        <div id="form" class="white-popup-block mfp-hide">
-            Popup content
+        <div id="form" class="white-popup-block popup mfp-hide">
+            <div class="popup__header">
+                Начни пользоваться сервисом прямо сейчас
+            </div>
+            <div class="popup__content">
+                <input class="popup__input" type="text" name="Name" autocomplete="name" placeholder="Ваше имя">
+                <input class="popup__input" type="email" name="Email" autocomplete="email" placeholder="Ваш e-mail">
+                <button class="button button__blue button__mid popup__button js-button-send">Получить инструкции</button>
+            </div>
+            <div class="block__text block__text-centered small popup__text">
+                Оставляя свои контактные данные в этой форме, вы даете свое согласие на обработку персональных данных
+            </div>
         </div>
     </body>
 </html>
