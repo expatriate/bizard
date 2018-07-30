@@ -193,9 +193,9 @@ html, body {
     background: #dedede;/*
     border: 1px solid rgba(0, 0, 0, 0.05);*/
     /*box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);*/
-    color: #ababab;
+    color: #ffffff;
     text-decoration: none;
-    text-shadow: -1px -1px 0 #999999;
+    text-shadow: -1px -1px 0 #ababab;
     transition: all 250ms linear;
 }
 
@@ -348,6 +348,7 @@ html, body {
 
 .block__grey {
     background: #a5a5a5; /* Old browsers */
+    margin-bottom: 0px;
     background: -moz-radial-gradient(50% 65%, ellipse cover, #9c9c9c 0%, #a5a5a5 100%); /* FF3.6-15 */
     background: -webkit-radial-gradient(50% 65%, ellipse cover, #9c9c9c 0%,#a5a5a5 100%); /* Chrome10-25,Safari5.1-6 */
     background: radial-gradient(ellipse at 50% 65%, #9c9c9c 0%,#a5a5a5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -535,17 +536,20 @@ html, body {
     margin: 112px auto 0;
 }
 .top-banner__video {
-    width: 900px;
+    width: 888px;
     height: 500px;
     margin: 16px auto;
-    background: #888888;
+    background: url('../img/png/top-video-bg.png');
+}
+.js-video {
+    outline: none;
 }
 
 .bottom-banner__video {
-    width: 900px;
+    width: 888px;
     height: 500px;
     margin: 0px auto;
-    background: #888888;
+    background: url('../img/png/bottom-video-bg.png');
 }
 
 .top-banner__video-text .video-pdf {
@@ -1000,4 +1004,14 @@ html, body {
 .anim-right-invis-end-1 {
     transform: translateX(0px);
     transition: all 1s ease-out;
+}
+
+
+.white-popup-block {
+    background: #ffffff;
+    padding: 20px 30px;
+    text-align: left;
+    max-width: 650px;
+    margin: 40px auto;
+    position: relative;
 }

@@ -8,11 +8,14 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
         <link rel="stylesheet" type="text/css" href="css/common.css">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.1/jquery.detect_swipe.min.js"></script>
         <script src="js/viewportChecker.min.js"></script>
         <script src="js/followCursor-min.js"></script>
+        <script src="js/magnific-popup.min.js"></script>
         
         <script type="text/javascript" src="js/common.js"></script>
     </head>
@@ -71,7 +74,7 @@
                             Централизованная система управления майнинг мощностями на высоком уровне 
                         </h1>
                         <div class="js-animate-from-top-slow">
-                            <button class="button button__blue top-banner__button">
+                            <button class="button button__blue top-banner__button modal" data-popup="#form">
                                 Хочу попробовать
                             </button>
                         </div>
@@ -93,8 +96,10 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="top-banner__video">
-                            </div>
+                            <a class="js-video" href="https://www.youtube.com/watch?v=M7lc1UVf-VE">
+                                <div class="top-banner__video js-animate-from-top">
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -130,7 +135,7 @@
                         <img src="img/png/block-2.png" alt="">
                     </div>
                     <div class="js-animate-from-top-slow">
-                        <button class="button button__blue ">
+                        <button class="button button__blue modal" data-popup="#form">
                             Хочу попробовать
                         </button>
                     </div>
@@ -270,7 +275,7 @@
         <div class="block">
             <div class="block__inner block__inner-centered">
                 <div class="js-animate-from-top-slow">
-                    <button class="button button__blue">
+                    <button class="button button__blue modal" data-popup="#form">
                         Хочу попробовать
                     </button>
                 </div>
@@ -361,7 +366,7 @@
         <div class="block">
             <div class="block__inner block__inner-centered">
                 <div class="js-animate-from-top-slow">
-                    <button class="button button__blue">
+                    <button class="button button__blue modal" data-popup="#form">
                         Хочу попробовать
                     </button>
                 </div>
@@ -375,8 +380,10 @@
                 <div class="block__text block__text-centered js-animate-from-top-slow">
                     Всего 7 минут, чтобы получить ПРОФИТ
                 </div>
-                <div class="bottom-banner__video js-animate-from-top">
-                </div>
+                <a  href="https://www.youtube.com/watch?v=M7lc1UVf-VE" class="js-video">
+                    <div class="bottom-banner__video js-animate-from-top">
+                    </div>
+                </a>
             </div>
         </div>
         <div class="block block__blue block__withoutmargin">
@@ -460,7 +467,7 @@
                                 Техническая поддержка
                             </div>
                         </div>
-                        <button class="button button__blue">
+                        <button class="button button__blue modal" data-popup="#form">
                             Подключиться
                         </button>
                     </div>
@@ -488,7 +495,7 @@
                                 Техническая поддержка
                             </div>
                         </div>
-                        <button class="button button__white">
+                        <button class="button button__white modal" data-popup="#form">
                             Подключиться
                         </button>
                     </div>
@@ -513,7 +520,7 @@
                                 Техническая поддержка
                             </div>
                         </div>
-                        <button class="button button__blue">
+                        <button class="button button__blue modal" data-popup="#form">
                             Подключиться
                         </button>
                     </div>
@@ -572,6 +579,9 @@
                     <a href="/" title="privacy">Политика конфиденциальности</a>
                 </div>
             </div>
+        </div>
+        <div id="form" class="white-popup-block mfp-hide">
+            Popup content
         </div>
     </body>
 </html>
