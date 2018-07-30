@@ -12,6 +12,10 @@ label.error {
 .form-send label.error {
     margin: 0px;
 }
+form {
+    display: flex;
+    width: 100%;
+}
 
 .block {
     width: 100%;
