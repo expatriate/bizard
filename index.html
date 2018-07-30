@@ -404,9 +404,11 @@
                     ХОЧЕШЬ ПОПРОБОВАТЬ БЕСПЛАТНО?
                 </div>
                 <div class="form-send js-animate-from-top">
-                    <input type="text" name="Name" autocomplete="name" placeholder="Ваше имя">
-                    <input type="email" name="Email" autocomplete="email" placeholder="Ваш e-mail">
-                    <button class="button button__blue button__mid js-button-send">Получить инструкции</button>
+                    <form action="" method="post" id="submit__firstUse">
+                        <input type="text" name="Name" autocomplete="name" required="required" placeholder="Ваше имя">
+                        <input type="email" name="Email" autocomplete="email" required="required" placeholder="Ваш e-mail">
+                        <button class="button button__blue button__mid js-button-send">Получить инструкции</button>
+                    </form>
                 </div>
                 <div class="block__text block__text-centered small white mid-size pb-64 js-animate-from-top-slow mobile-pad">
                     Оставляя свои контактные данные в этой форме, вы даете свое согласие на обработку персональных данных
@@ -548,9 +550,11 @@
                     Оставь заявку и получи 7-дневный бесплатный период
                 </div>
                 <div class="form-send js-animate-from-top">
-                    <input type="text" name="Name" autocomplete="name" placeholder="Ваше имя">
-                    <input type="email" name="Email" autocomplete="email" placeholder="Ваш e-mail">
-                    <button class="button button__blue button__mid js-button-send">Получить инструкции</button>
+                    <form action="" method="post" id="submit__7days">
+                        <input type="text" name="Name" autocomplete="name" required="required" placeholder="Ваше имя">
+                        <input type="email" name="Email" autocomplete="email" required="required" placeholder="Ваш e-mail">
+                        <button class="button button__blue button__mid js-button-send">Получить инструкции</button>
+                    </form>
                 </div>
                 <div class="block__text block__text-centered small white mid-size pb-64 js-animate-from-top-slow mobile-pad">
                     Оставляя свои контактные данные в этой форме, вы даете свое согласие на обработку персональных данных
@@ -656,9 +660,11 @@
                 Начни пользоваться сервисом прямо сейчас
             </div>
             <div class="popup__content">
-                <input class="popup__input" type="text" name="Name" autocomplete="name" placeholder="Ваше имя">
-                <input class="popup__input" type="email" name="Email" autocomplete="email" placeholder="Ваш e-mail">
-                <button class="button button__blue button__mid popup__button js-button-send">Получить инструкции</button>
+                <form action="" method="post" id="submit__popup">
+                    <input class="popup__input" type="text" name="Name" required="required" autocomplete="name" placeholder="Ваше имя">
+                    <input class="popup__input" type="email" name="Email" required="required" autocomplete="email" placeholder="Ваш e-mail">
+                    <button class="button button__blue button__mid popup__button js-button-send">Получить инструкции</button>
+                </form>
             </div>
             <div class="block__text block__text-centered small popup__text">
                 Оставляя свои контактные данные в этой форме, вы даете свое согласие на обработку персональных данных
@@ -668,6 +674,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/detect_swipe/2.1.1/jquery.detect_swipe.min.js"></script>
         <script src="js/viewportChecker.min.js"></script>
         <script src="js/jquery.slicknav.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/messages_ru.min.js"></script>
         <script src="js/followCursor-min.js"></script>
         <script src="js/magnific-popup.min.js"></script>
         <script src="js/common.js"></script>

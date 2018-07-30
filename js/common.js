@@ -81,6 +81,9 @@ $(document).ready(function() {
         }
     });
 
+    $('#submit__popup').validate();
+    $('#submit__7days').validate();
+    $('#submit__firstUse').validate();
 
     /*
     * SUBMIT FORM
