@@ -16,6 +16,11 @@ form {
     display: flex;
     width: 100%;
 }
+.popup__content form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 160px;
+}
 
 .block {
     width: 100%;
@@ -1056,8 +1061,6 @@ form {
 }
 .popup__content {
     display: flex;
-    flex-direction: column;
-    padding: 20px 160px;
 }
 .popup__text {
     font-size: 16px;
@@ -1374,7 +1377,7 @@ form {
     .popup__header {
         padding: 0px 0px 10px 0px;
     }
-    .popup__content {
+    .popup__content form{
         padding: 0px;
     }
     .top-menu__navigation {
