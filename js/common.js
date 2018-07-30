@@ -191,7 +191,6 @@ function loadAnimation() {
 
     animateFromTop.viewportChecker({
         repeat: false,
-        offset: '10%',
         callbackFunction: function callbackFunction(elem, action) {
             setTimeout(function () {
                 $(elem).addClass('anim-top-invis-1').removeClass('anim-top-invis-0');
@@ -201,7 +200,6 @@ function loadAnimation() {
 
     animateFromTopSlow.viewportChecker({
         repeat: false,
-        offset: '10%',
         callbackFunction: function callbackFunction(elem, action) {
             var time = 200;
             if ($(elem).hasClass('card-simple') || $(elem).hasClass('button')) {
@@ -215,7 +213,6 @@ function loadAnimation() {
 
     animateFromBot.viewportChecker({
         repeat: false,
-        offset: '10%',
         callbackFunction: function callbackFunction(elem, action) {
             setTimeout(function () {
                 $(elem).addClass('anim-bot-invis-1').removeClass('anim-bot-invis-0');
@@ -225,7 +222,6 @@ function loadAnimation() {
 
     animateFromBotSlow.viewportChecker({
         repeat: false,
-        offset: '10%',
         callbackFunction: function callbackFunction(elem, action) {
             setTimeout(function () {
                 $(elem).addClass('anim-bot-invis-slow-1').removeClass('anim-bot-invis-slow-0');
