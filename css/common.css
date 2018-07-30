@@ -481,7 +481,7 @@ html, body {
 .top-menu__social__item {
     margin: 2px;
 }
-.top-menu__lang , .top-menu__lang__mobile{
+.top-menu__lang , .top-menu__lang__mobile, .top-menu__lang__tablet{
     flex-grow: 1;
     display: flex;
     font-family: 'SFU';
@@ -492,11 +492,11 @@ html, body {
 .top-menu__lang__mobile {
     display: none;
 }
-.top-menu__lang a , .top-menu__lang__mobile a{
+.top-menu__lang a , .top-menu__lang__mobile a, .top-menu__lang__tablet a{
     text-decoration: none;
     color: #ffffff;
 }
-.top-menu__lang a.active, .top-menu__lang__mobile a.active {
+.top-menu__lang a.active, .top-menu__lang__mobile a.active, .top-menu__lang__tablet a.active {
     color: #ffcd39;
 }
 
@@ -888,7 +888,7 @@ html, body {
     margin-right:24px;
 }
 
-.copyright {
+.copyright, .copyright-tablet{
     text-align: center;
     font-size: 21px;
     padding-top: 190px;
@@ -896,7 +896,7 @@ html, body {
     color: #ffffff;
     font-weight: 300;
 }
-.copyright a {
+.copyright a , .copyright-tablet a{
     color: #ffffff;
     text-decoration: none;
     border-bottom: 1px solid #ffffff;
@@ -1093,6 +1093,14 @@ html, body {
 }
 
 .slicknav_menu {
+    display: none;
+}
+
+.tablet-show {
+    display: none;
+}
+
+.top-menu__social__tablet, .top-menu__lang__tablet {
     display: none;
 }
 
@@ -1319,6 +1327,8 @@ html, body {
     .bottom-social .button {
         margin: 0px 20px 20px 20px;
         width: auto;
+        padding: 10px;
+        height: 50px;
     }
     .copyright {
         padding-top: 10px;
@@ -1331,11 +1341,6 @@ html, body {
     .contacts-bg {
         background-position: center bottom;
     }
-    .bottom-social .button {
-        padding: 10px;
-        height: 50px;
-    }
-
     .popup__header {
         padding: 0px 0px 10px 0px;
     }
@@ -1393,6 +1398,168 @@ html, body {
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .block__mid, .block__inner {
+        width: 100%;
+    }
+    .top-menu {
+        flex-direction: column;
+        align-items: start;
+    }
+    .top-menu__logo a {
+        font-size: 30px;
+    }
+    .top-menu__navigation a:first-child {
+        margin-left:0px;
+    }
+    .top-menu__social, .video-pdf, .top-menu__lang {
+        display: none;
+    }
+    .top-banner__video-text {
+        color: #ffffff;
+    }
+    .top-banner__video, .bottom-banner__video {
+        width: 102%;
+        background-size: 102% 102%;
+        margin-left:-1%;
+    }
+    .image {
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        right: 0px;
+        left: auto;
+        text-align: right;
+    }
+    .block__title {
+        padding-left: 30px;
+    }
+    .block__content {
+        padding: 0px 30px;
+    }
+    .grid-card__image img {
+        height: 30%;
+    }
+    .grid-card {
+        height:508px;
+    }
+    .block {
+        margin-top: 60px;
+    }
+    .block__content__pull-left {
+        width: auto;
+    }
+    .block__content__pull-right {
+        width: auto;
+    }
+    .block__subtitle {
+        font-size: 28px;
+    }
+    .block__subtitle__image {
+        width: 50px;
+        height: 50px;
+        margin-right: 30px;
+        margin-bottom: 0px;
+    }
+    .block__subtitle__image img{
+        width: 50px;
+        height: 50px;
+    }
+    .block__rotated {
+        width: 180%;
+    }
+    .block__content__pull-right .block__subtitle {
+        margin-left: 0px;
+    }
+    .block__withoutmargin {
+        margin-top: 0px;
+    }
+    .triple-card {
+        margin-left: 0px;
+        padding-bottom: 100px;
+    }
+    .card:first-child, .card:nth-child(2), .card:last-child {
+        margin-right: 0px;
+        margin-left: 0px;
+        height: auto;
+    }
+    .card__image img{
+        width: 110px;
+    }
+    .card__text {
+        font-size: 16px;
+    }
+    .block__title-tp-2 {
+        padding-top: 420px;
+    }
+
+    .how-it-work .how-it-works-bg-1, .how-it-work .image__float-right, .how-it-work .image__float-left, #mining-pools{
+        display: none;
+    }
+
+    .form-send input {
+        margin: 20px 20px 20px 0px;
+        width: 33%;
+        padding: 12px;
+        font-size: 20px;
+    }
+    .form-send input:first-child {
+        margin-left:20px;
+    }
+    .form-send button{
+        margin: 20px 20px 20px 0px;
+        width: 33%;
+        padding: 12px;
+        font-size: 20px;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+    .round__item-arrow:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    .card-simple, .card-simple:first-child, .card-simple:last-child {
+        height: auto;
+    }
+    .card-simple .button {
+        padding: 10px 26px;
+        margin: 20px;
+        width: auto;
+    }
+    .bottom-social {
+        padding-bottom: 300px;
+    }
+    .bottom-social .button {
+        margin: 0px 20px 20px 20px;
+        width: auto;
+        padding: 10px;
+        height: 50px;
+        min-width: 284px;
+    }
+    .copyright {
+        display: none;
+    }
+    .copyright-tablet {
+        padding-top: 50px;
+    }
+    .tablet-show {
+        display: block;
+        margin-bottom: 0px;
+    }
+    .top-menu__social__tablet, .top-menu__lang__tablet {
+        display: block;
+        text-align: center;
+    }
+    .top-menu__social__tablet {
+        padding: 40px 0px
+    }
+    .top-menu__lang__tablet {
+        font-size: 24px;
+    }
+
+    .top-menu__lang__tablet a {
+        font-size: 24px;
+    }
 
 }
 @media only screen and (min-device-width : 1025px) and (max-device-width : 1200px) {
