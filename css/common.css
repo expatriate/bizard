@@ -1379,6 +1379,7 @@ html, body {
     }
     .top-menu__logo a {
         font-size: 3.8em;
+        text-align: center;
     }
     .top-menu__lang {
         display: none;

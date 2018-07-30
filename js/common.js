@@ -1,25 +1,4 @@
 'use strict';
-
-/*var player1, player2;
-
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/player_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-function onYouTubePlayerAPIReady() {
-    player1 = new YT.Player('top-menu-video', {
-        height: '500',
-        width: '888',
-        videoId: 'M7lc1UVf-VE'
-    });
-    player2 = new YT.Player('bottom-video', {
-        height: '500',
-        width: '888',
-        videoId: 'M7lc1UVf-VE'
-    });
-}*/
-
 $(document).ready(function() {
 
     var $window = $(window); 
@@ -46,33 +25,12 @@ $(document).ready(function() {
         $(e.target).addClass('active');
     });
 
-    /*$('.js-video').magnificPopup({
-        type: 'iframe',
-        iframe: {
-            markup: '<div class="mfp-iframe-scaler">' +
-                        '<div class="mfp-close"></div>' +
-                        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-                    '</div>',
-            patterns: {
-                youtube: {
-                    index: 'youtube.com/',
-
-                    id: 'v=',
-
-                    src: '//www.youtube.com/embed/M7lc1UVf-VE?autoplay=0'
-                },
-            },
-            srcAction: 'iframe_src',
-        }
-    })  
-*/
     $('.js-video').magnificPopup({
         disableOn: 700,
         type: 'iframe',
         mainClass: 'mfp-fade',
         removalDelay: 160,
         preloader: false,
-
         fixedContentPos: false
     });
 
