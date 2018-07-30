@@ -9,6 +9,8 @@ $(document).ready(function() {
     onLoad();
     loadAnimation();
 
+    followCursor($('.card'), 5);
+
     // Navigation
     $('#navigation a').on('click', function(e) {
         e.preventDefault();
@@ -32,8 +34,15 @@ $(document).ready(function() {
             }
             diff = (($(window).scrollTop() + $window.height()/2) - (scrollBlock.offset().top + scrollBlock.height()/2)) / 5;
             scrollBlock.css({top: diff});
-            console.log(diff)
         }
+    });
+
+    $(document).on('mouseover', '.card', function(e) {
+        $(e.target).addClass('card-high');
+    });
+
+    $(document).on('mouseout', '.card', function(e) {
+        $(e.target).removeClass('card-high');
     });
 });
 

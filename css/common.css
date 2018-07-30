@@ -189,6 +189,16 @@ html, body {
     transition: all 250ms linear;
 }
 
+.button__white:hover {
+    background: #dedede;/*
+    border: 1px solid rgba(0, 0, 0, 0.05);*/
+    /*box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);*/
+    color: #ababab;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #999999;
+    transition: all 250ms linear;
+}
+
 
 .button__mid {
     font-size: 25px;
@@ -577,11 +587,12 @@ html, body {
 .card {
     position: relative;
     box-shadow: 0px 6px 80px rgba(0, 0, 0, 0.4);
-    background: rgb(66,143,230); /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(66,143,230,1) 0%, rgba(47,97,193,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(66,143,230,1) 0%,rgba(47,97,193,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(66,143,230,1) 0%,rgba(47,97,193,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#428fe6', endColorstr='#2f61c1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.card-high {
+    /*z-index: 99!important*/;
+    transition: box-shadow .3s ease;
+    box-shadow: 0px 10px 60px rgba(0,0,0,.6);
 }
 .card:before, .card-simple:before {
     content: '';
@@ -598,12 +609,24 @@ html, body {
     border-radius: 15px;
     z-index: 1;
     margin-right: -20px;
+
+    background: rgb(66,143,230); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #428fe6 0%, #2e5fc0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #428fe6 0%, #2e5fc0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #428fe6 0%,#2e5fc0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#428fe6', endColorstr='#2e5fc0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .card:nth-child(2) {
     width: 40%;
     height: 550px;
     border-radius: 15px;
     z-index: 0;
+
+    background: rgb(66,143,230); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #336ac9 0%, #203aa3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #336ac9 0%, #203aa3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #336ac9 0%,#203aa3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336ac9', endColorstr='#203aa3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .card:last-child {
     width: 30%;
@@ -611,6 +634,43 @@ html, body {
     border-radius: 15px;
     margin-left:-20px;
     z-index: 1;
+
+    background: rgb(66,143,230); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #264aa9 0%, #173186 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #264aa9 0%, #173186 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #264aa9 0%,#173186 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#264aa9', endColorstr='#173186',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.card__bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin-top: 40px;
+    z-index: -1;
+    opacity: .8;
+}
+
+.card__image {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.card__text {
+    padding: 30px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.card:nth-child(2) .card__image {
+    padding-top: 140px;
+}
+
+.card:nth-child(2) .card__text {
+    padding: 30px 60px;
 }
 
 .card-simple {
@@ -649,7 +709,7 @@ html, body {
 .card-simple:nth-child(2) .card-simple__time {
     padding: 85px 0px 12px 0px;
 }
-.card-simple__blue .card-simple__time{
+.card-simple__blue .card-simple__time, .card-simple__blue .card-simple__line {
     color: #ffffff;
 }
 .card-simple__price {
