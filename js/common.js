@@ -26,7 +26,6 @@ $(document).ready(function() {
     });
 
     $('.js-video').magnificPopup({
-        disableOn: 700,
         type: 'iframe',
         mainClass: 'mfp-fade',
         removalDelay: 160,
@@ -65,11 +64,21 @@ $(document).ready(function() {
     });
 
     $(document).on('mouseover', '.card', function(e) {
-        $(e.target).addClass('card-high');
+        if ($(window).winth() <= 1176) {
+            e.preventDefault();
+            e.stopPropagation();
+        } else {
+            $(e.target).addClass('card-high');
+        }
     });
 
     $(document).on('mouseout', '.card', function(e) {
-        $(e.target).removeClass('card-high');
+        if ($(window).winth() <= 1176) {
+            e.preventDefault();
+            e.stopPropagation();
+        } else {
+            $(e.target).removeClass('card-high');
+        }
     });
 
 

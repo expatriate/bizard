@@ -241,6 +241,9 @@ html, body {
     clear: both;
     visibility: hidden;
 }
+.button__withoutmargint {
+    margin-top: 0px!important;
+}
 
 .block__title {
     font-size: 45px;
@@ -1258,6 +1261,11 @@ html, body {
     .card:first-child, .card:last-child, .card:nth-child(2) {
         width: 100%;
         margin: 20px 0px 0px 0px;
+        background: rgb(66,143,230); /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #428fe6 0%, #2e5fc0 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #428fe6 0%, #2e5fc0 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #428fe6 0%,#2e5fc0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#428fe6', endColorstr='#2e5fc0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     }
     .card:last-child {
         margin-bottom: 60px;
@@ -1314,7 +1322,7 @@ html, body {
     }
     .card-simple .button {
         padding: 0px 40px;
-        margin: 10px;
+        margin: 10px 10px 30px 10px;
         width: auto;
     }
     .card-simple:first-child, .card-simple:last-child, .card-simple {
@@ -1481,6 +1489,11 @@ html, body {
         margin-right: 0px;
         margin-left: 0px;
         height: auto;
+        background: rgb(66,143,230); /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #428fe6 0%, #2e5fc0 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #428fe6 0%, #2e5fc0 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #428fe6 0%,#2e5fc0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#428fe6', endColorstr='#2e5fc0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     }
     .card__image img{
         width: 110px;
