@@ -565,18 +565,23 @@ form {
 .top-banner__video {
     width: 888px;
     height: 500px;
-    margin: 16px auto;
-    background: url('../img/png/top-video-bg.png');
+    /*margin: 16px auto;*/
+    margin-top: 16px;
+    /*background: url('../img/png/top-video-bg.png');*/
 }
 .js-video {
     outline: none;
+    line-height: 0px;
+    display: block;
+    text-align: center;
 }
 
 .bottom-banner__video {
     width: 888px;
     height: 500px;
-    margin: 0px auto;
-    background: url('../img/png/bottom-video-bg.png');
+    /*margin: 0px auto;*/
+    margin-top: 16px;
+    /*background: url('../img/png/bottom-video-bg.png');*/
 }
 
 .top-banner__video-text .video-pdf {
@@ -1226,6 +1231,7 @@ form {
     }
     .block__title {
         font-size: 30px;
+        box-sizing: border-box;
     }
     .grid-card {
         width: 100%;
@@ -1236,6 +1242,9 @@ form {
     }
     .grid-card {
         margin: 10px 0px;
+    }
+    .grid__row .grid-card:last-child {
+        margin-bottom: 0px;
     }
     .grid-card__info {
         width: 80%;
@@ -1264,7 +1273,7 @@ form {
         height: 50px;
     }
     .block__rotated {
-            width: 180%;
+        width: 180%;
     }
 
     .how-it-work .how-it-works-bg-1, .how-it-work .image__float-right, .how-it-work .image__float-left {
@@ -1315,7 +1324,12 @@ form {
         font-size: 32px;
     }
     #use-it-now {
-        margin-top: 125px;
+        margin-top: 0px;
+        box-sizing: border-box;
+    }
+    .block__300 {
+        height: auto;
+        margin-bottom: 0px;
     }
     .mid-size {
         width: 100%;
@@ -1353,6 +1367,12 @@ form {
     .card-simple:first-child, .card-simple:last-child, .card-simple {
         height: auto;
         margin-bottom: 20px;
+    }
+    .card-simple:last-child {
+        margin-top:0px;
+    }
+    .card-simple {
+        margin-left: 0px;
     }
     .bottom-social {
         flex-direction: column;
