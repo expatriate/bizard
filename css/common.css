@@ -1420,6 +1420,7 @@ form {
     }*/
     .slicknav_menu {
         display: block;
+        background: #081358;
     }
     .slicknav_nav {
         font-family: 'SFU';
